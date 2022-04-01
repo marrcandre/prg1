@@ -7,9 +7,10 @@ distancia = float(input("Distância (km): "))
 velocidade = float(input("Velocidade (km/h): "))
 
 horas = distancia / velocidade
-minutos = horas * 60 
+minutos = horas * 60
 h, m = divmod(minutos, 60)
 
-# print(f"Tempo de viagem: {round(horas,2)} horas.")
+# Direto
+print(f"Tempo de viagem: {round(horas,2)} horas.")
+# Convertido
 print(f"Tempo de viagem: {int(h)}h{int(m)}m.")
-
